@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+            
+            .gameover {
+                font-family:sans-serif;
+                font-size:80px;
+                fill:red;
+            }
+            .score {
+                font-family:sans-serif;
+                font-size:20px;
+                fill:white;
+            }
+        </style>
+        <script src="./dist/spaceinvaders.js"></script>
+    </head>
+    <body>
+        <h1>Space Invaders</h1>
+        <svg id="svgCanvas" width="600" height="600">
+            <text id="score" x="20" y="35" class="score">Score: 0</text>
+            <text id="level" x="500" y="35" class="score">Score: 1</text>
+
+            <g id="ship" transform="translate(300,580)">
+                <rect x="-35" y="0" width="70" height="10" style="fill:rgb(238, 16, 16)"></rect>
+            </g>
+        </svg>
+    </body>
+</html>
+
